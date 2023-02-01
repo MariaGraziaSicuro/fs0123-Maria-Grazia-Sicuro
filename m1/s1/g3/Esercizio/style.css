@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+}
+
+.centered{
+    text-align: center;
+}
+
+#imagecontainer{
+    background-color: rgba(34, 131, 124, 0.66);
+
+}
+header p{
+    border-top-style: solid;
+    border-top-color: rgba(124, 194, 59, 0.9);
+    margin-top: 0;
+    padding: 1em;
+    background-color: rgba(255, 228, 196, 0.4);
+    
+}
+
+header span{
+    font-weight: bold;
+}
+
+.main-container{
+    margin-left:  25%; margin-right: 25%;
+}
+
+iframe{
+    width: 100%; border-radius: 1px ;
+}
+.artist{
+    color: grey
+}
+.redtext{
+    color: red;
+}
+main div{
+    border-left-style: solid;
+    border-left-color: rgba(113, 211, 32, 0.9);
+}
