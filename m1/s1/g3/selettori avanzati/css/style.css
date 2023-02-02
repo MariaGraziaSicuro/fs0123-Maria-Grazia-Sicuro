@@ -1,0 +1,19 @@
+/*stili generali*/
+
+
+
+
+
+
+section span{
+    text-decoration:line-through;
+}
+
+section + small:{
+    font-weight: bold;
+}
+section ~ small{ 
+    color: red;
+}
+
+/*esempio menu mobile pure css */

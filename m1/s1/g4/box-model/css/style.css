@@ -1,0 +1,43 @@
+.quadrato{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    overflow: auto;
+}
+
+
+
+
+
+
+
+
+
+
+.padding{
+    padding: 15px; /*tutti i lati*/
+    padding-right: 0;
+
+}
+
+
+
+
+
+
+
+/*area del margin- serve per staccare gli elementi nessun contenuto,nessun colore*/
+
+
+.marhìgin{
+    margin: 100px;
+    /*
+    margin-top: 15px;
+    marhìgin-right: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+
+    margin: 15px 0; sopra e sotto 15px, a sinistra e destra 15px;
+
+    margin: 15px 0 15px 0 */
+}
