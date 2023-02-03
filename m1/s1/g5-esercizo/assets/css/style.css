@@ -1,0 +1,100 @@
+/* Your styles here */
+
+body{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.65;
+    text-align: center;
+    color: #343d41;  
+}
+
+h1, h2{
+    font-family: 'Montserrat', sans-serif;
+    color: #25a2c3;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* header*/
+
+header{
+    background-color: #000;
+    padding: 1.5em;
+}
+header img {
+    width: 40%;
+    max-width: 450px;
+
+}
+
+/*main*/
+main secttion h1{
+    font-size: 2em;
+    color: #25a2c3;
+}
+
+section p{
+    margin: 0 auto 30px;
+}
+
+main section a{
+    display: inline-block;
+    color: #ffffff;
+    font-family: 'Monserrat', sans-serif;
+    font-size: 0.8em;
+    background-color: #f04c2f;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+
+main section, main articlw{
+    padding: 60px 40px;
+}
+section h2{
+    color: #25a2c3 ;
+
+}
+    
+#immaginerotonda {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+article{
+    color: #ffffff;
+    background-color: #e22d0e;
+    
+}
+    
+article h2{
+    font-size: 1.6em;
+}
+.card {
+    border: 1px solid #dee1e3;
+    border-radius:10px;
+    margin-bottom: 20px;
+}
+  
+.card img{
+    width: 100%;
+    height:100%;
+    margin-bottom: 20px;
+}
+
+footer{
+     background-color: #25a2c3;
+     padding: 30px;
+    
+
+}
+ footer h2{
+    color:#ffffff;
+    font-size: 1.8em;
+
+ }
+
+
+ /*incompleto sicuramente pieno di errori*/
