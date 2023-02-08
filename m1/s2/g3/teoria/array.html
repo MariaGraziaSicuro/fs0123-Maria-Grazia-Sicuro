@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        let arrOld = new Array(); // non si usa
+        let arr=[];
+
+        let numeri = [1,2,3,4,5,6]
+
+        let dati = [
+            'stringa',
+            0,
+            true,
+            {},
+            []
+        ]
+
+        // lettura dei valori di un array
+        let pizze =['Margherita', 'Diavola', '4 Formaggi'];
+        
+        console.log(pizze)
+
+        console.log(pizze[0])
+
+        let pizza2 = pizz2[1];
+        console.log(pizza2);
+
+        //scrittura
+        pizze[2]= 'caprocciosa';
+        console.log(pizze)
+    
+        //attenzione: evitiamo i buchi
+        pizze[4] = 'Marinara'; //sconsigliato per aggiungere
+        console.log(pizze)
+
+        //aggiungere alla fine dell'array senza creare i buchi
+        pizze.push('Parigina');
+        console.log(pizze);
+      
+        //proprietà di lenght
+        console.log(pizze.lenght);
+        console.log(pizze[pizze.lenght-1]);//leggo l'ultio elemento dell'array
+
+        //è in comune con le stringhe
+        console.log('ciao'.length)//è comunque sbagliato dire che strinhe sono arrai di caratteri
+
+
+        /**
+         * riordinare
+         * *
+         * attenzione: sort non è adatto a riordinare i numeri
+         riordina i numeri in ordine alfabetico
+         */
+        
+
+        let studenti =['Mauro', 'Vittoria','Rebecca']
+        console.log(studenti)
+        studenti.sort()//riordina in ordine alfabetico
+        console.log(studentiù)
+        studenti.reverse() //inverte l'ordine attuale
+        console.log(studenti)
+
+        /*riordinare i numeri*/
+        let numerati =[1,100,20];
+        numerati.sort(function(a,b){
+            return a - b;
+        })
+        console.log(numerati)
+       
+        // verifica se un dato è array
+
+        
+
+
+
+
+    </script>
+    
+
+</body>
+</html>
