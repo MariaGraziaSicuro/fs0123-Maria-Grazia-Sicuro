@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+       
+     
+        // si usa quando dobbiamo effettuare ua modifica ad ogni elemento dell'array
+        let pizze =[ 'margherita' , 'divola', 'marinara', 'mimosa'];
+         
+        let pizzeDiv = pizza.map(function(valore){
+            return `<div>${valore}</div>`
+        })
+        console.log(pizzaDiv);
+
+         //serve a ciclare gli array
+         pizzeDiv.forEach(function(valore){
+            document.write(valore)
+         })
+         
+         /*MAP*/
+         let numeri = [1,2,3,4,5,,6];
+         let numeriX2 =numeri.map(function(n){
+
+         })     
+        console.log(numeriX2);  
+         /*
+         ecco come si faceva quando non avevvamo map
+         let numeriMoltiplicati =[];
+         numeri.forEach(function(n){
+          nemeriMoltiplicati.push(n * 2)
+         })
+         */
+        /* FILTER*/
+
+        let numeriFiltrati = numeri.filter(function(n){
+            return n > 3
+        
+        })
+        console.log(numeriFiltrati)
+
+        /* FIND*/
+        //restituisce il primo valore trovato [non un ARRAY]
+
+        let numeroTrovato = numeri.find (function(n){
+            return n > 3
+        })
+        console.log(numeroTrovato)
+
+        /* reduce*/
+        numeri =[1,2,3,4,5,6];
+        let somma = numeri.reduce(function(p,c){
+            return p + c;
+        })
+        console.log(somma)
+
+        numeri = [1,20,300,4,5,6,];
+        let numeroGrande = numeri.reduce(function(p,c){
+            
+        })
+
+        /*Eliminare da un array*/
+        //andando per esclusione
+        pizze = ['margherita', 'diavola', 'marinara', 'mimosa'];
+        pizze = pizze.filter(function(p){
+            return p != 'mimosa';
+        })
+        console.log(pizze)
+
+        //eliminazione diretta
+        pizze = ['margherita', 'diavola', 'marinara', 'mimosa'];
+        let indice =pizze.indexOF('marinara');// trovare la marinara e mi dice il suo indice(posizione)
+        
+        pizze.splice(indice,1);//elimino la pizza Marinara
+        console.log(pizze)
+   
+   
+         // elimazione da array di ogetti
+        pizze =[
+            {
+                gusto : 'margherita',
+                prezzo :5,
+                disponibile :true
+            },
+            {
+                gusto : 'diavola',
+                prezzo : 1,
+                disponibile :true
+            },
+            {
+                gusto : 'hawaiana',
+                prezzo :500,
+                disponibile :false
+            }
+            ];
+
+
+            let index = pizze.findIndex(function(p){
+                return !p.disponibile 
+            })   
+             
+            console.log(index)
+            pizze.splice(index,1);
+            console.log(pizze)
+   
+   
+    </script>
+
+
+
+
+
+
+
+</body>
+</html>

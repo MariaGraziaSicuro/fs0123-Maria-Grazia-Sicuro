@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="test">Hello word!</div>
+    <div class="elemento"></div>
+    <div class="elemento"></div>
+    <div class="elemento"></div>
+    <div class="elemento"></div>
+    <div class="elemento"></div>
+    
+    
+    <script>
+
+        let test =document.getElementById("test");
+        console.dir(test.textContent);
+
+        test.textContent ="Ciao MOndo!"
+        console.dir(test.textContent);
+
+        let elementi = document.getElementsByClassNAme('elelmento');
+        console.log(elementi)
+
+        for(let elemento of elementi){
+            
+        }
+    </script>
+    
+    
+  
+</body>
+</html>
