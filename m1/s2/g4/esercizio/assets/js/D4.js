@@ -106,6 +106,7 @@ Crea una variabile chiamata "characters" e inserisci un array vuoto
 */
 let characters = []
 console.log(characters);
+
 /* ESERCIZIO 2
 Usando un for loop, cicla l'array "starWarsCharacters" ed accedi alla proprietà "name". 
 Usa il valore contenuto inserendolo nell'array creato precedentemente. 
@@ -127,13 +128,13 @@ let femaleCharacters = [
   ognuna di queste proprietà contiene un array vuoto
 */
   let eyeColor = {
-  blue: [],
-  yellow: [],
-  brown: [],
-  red: [],
-  blueGray: []
- }
- console.log(eyeColor);
+   blue: [],
+   yellow: [],
+   brown: [],
+   red: [],
+   blueGray: []
+  }
+  console.log(eyeColor);
 /* ESERCIZIO 5
   Inserisci l'oggetto dei personaggi in "starWarsCharacters" nell'array corrispondente al colore dei loro occhi nell'oggetto "eyeColor" precedentemente creato
   Utilizza uno switch statement per determinare in quale proprietà inserire il personaggio
@@ -141,7 +142,7 @@ let femaleCharacters = [
 
 
    for(let character of starWarsCharacters){
-    switch(character.eye_color){  
+     switch(character.eye_color){  
       case 'blue':                            // if
           eyeColor.blue.push(character)
           break;
@@ -171,12 +172,12 @@ let femaleCharacters = [
   let massaTotale = 0
   let massa = 0
   while(i < starWarsCharacters.length){
-    massa = starWarsCharacters[i].mass
-    if (typeof massa !== 'number' ) {
-        massa = Number(massa)
-    }
-    massaTotale = massaTotale + massa
-    i++;
+      massa = starWarsCharacters[i].mass
+      if (typeof massa !== 'number' ) {
+          massa = Number(massa)
+      }
+      massaTotale = massaTotale + massa
+      i++;
   }
   console.log(massaTotale);
 
