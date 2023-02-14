@@ -20,17 +20,29 @@
     <script>
 
         let test =document.getElementById("test");
-        console.dir(test.textContent);
+        console.dir(test)
 
-        test.textContent ="Ciao MOndo!"
-        console.dir(test.textContent);
+        console.log(test.innerHTML)
+        
+        test.innerHTML = 'Hello word!'
+        test.style.color ='red';
 
-        let elementi = document.getElementsByClassNAme('elelmento');
-        console.log(elementi)
+        let elementi = document.getElementsByClassName('elemento');
+        //non posso ciclarlo con foreach
 
-        for(let elemento of elementi){
-            
-        }
+        let divs = document.getElementsByTagName('div');//lista di elementi
+        console.log(divs)
+
+       // divs [0].innerHTML = 'ciao';
+
+       for(let d of divs){
+        d.innerHTML = 'ciao';
+        d.style.backgroundColor = 'yellow';
+       }
+       /*oppure con un for
+       for(let i = 0; i < divs.lenght; i++){
+        divs
+       }
     </script>
     
     
