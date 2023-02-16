@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 900;
+    font-display: block;
+    src: url("../webfonts/fa-solid-900.eot");
+    src: url("../webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.woff") format("woff"), url("../webfonts/fa-solid-900.ttf") format("truetype"), url("../webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
+  
+
+.container{
+    margin: 0 auto;
+    width: 500px;
+    background-color: rgb(38, 46, 104);
+}
+
+header{
+    padding: 10px 10px 10px 10px;
+    background-color: rgb(173, 244, 244);
+}
+header h1{
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 30px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+input {
+    box-sizing: border-box;
+}
+header input[type=text]{
+    width: 74%;   
+    padding: 10px; 
+}
+header input[type=button]{
+    width: 25%;
+    background-color: yellow;
+    text-align: center;
+    border: 2px solid black;
+    padding: 10px;
+    font-weight: bold;
+    
+}
+
+.task{
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    background: #eee;
+    cursor: pointer;
+    position: relative;
+}
+.task:hover, .task:nth-child(odd):hover{
+    background: #ddd;
+}
+.task:before:hover, .task:before:nth-child(odd):hover{
+    color: #ddd;
+}
+.task:nth-child(odd) {
+    background: #f9f9f9;
+  }
+
+
+.task:before {
+    display: inline-block;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f00c';
+    margin-right: 10px;
+    color: #eee;
+    text-decoration: none;
+}
+.task:nth-child(odd)::before {
+    color: #f9f9f9;
+  }
+/*
+.task:nth-child(odd):before {
+    color: #f9f9f9;    
+}
+*/
+.task.completed {
+    text-decoration: line-through;
+    background: #888;
+    color: #fff;
+}
+.task.completed:before {
+    color: greenyellow;
+}
+.close{
+    position: absolute;
+    padding: 10px;
+    top:0;
+    right: 0;
+}
+.close:before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f00d';
+}
+.close:hover{
+    background-color: red;
+}
+
+  
+/*
+.task:hover{
+    background: #ddd;
+}
+*/
+
+
+
