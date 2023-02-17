@@ -12,19 +12,19 @@ REGOLE
 /* ESERCIZIO A
   Crea una variabile chiamata "sum" e assegnaci il risultato della somma tra i valori 10 e 20.
 */
-  var sum = 10 + 20;
+  let sum = 10 + 20;
 
   console.log(sum);
 /* ESERCIZIO B
   Crea una variabile chiamata "random" e assegnaci un numero casuale tra 0 e 20 (deve essere generato dinamicamente a ogni esecuzione).
 */
-   var random = Math.floor(Math.random()*21) 
+   let random = Math.floor(Math.random()*21) 
 
   console.log(random);
 /* ESERCIZIO C
   Crea una variabile chiamata "me" e assegnaci un oggetto contenente le seguenti proprietà: name = il tuo nome, surname = il tuo cognome, age = la tua età.
 */
-var me = {
+let me = {
   name: 'Maria Grazia',
   surname: 'Sicuro',
   age: 34,
