@@ -1,4 +1,4 @@
-/* ESERCIZIO 1
+only/* ESERCIZIO 1
   Scrivi una funzione per concatenare due stringhe ricevute come parametri, selezionando solamente i primi 2 caratteri della
   prima e gli ultimi 3 della seconda. Converti la stringa risultante in maiuscolo e mostrala con un console.log().
 */
